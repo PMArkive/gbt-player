@@ -403,14 +403,14 @@ void convert_channel1(uint8_t pattern_number, uint8_t step_number,
 
         // If a note is set with no volume, set volume to the max
         // TODO: This should take the volume from the sample volume
-        if (volume == -1)
-            volume = 64;
+        //if (volume == -1)
+        //    volume = 64;
     }
 
     // Check if there is a sample defined
     if (samplenum > 0)
     {
-        uint32_t instrument = (samplenum - 1) & 3;
+        uint32_t instrument = samplenum & 3;
 
         command[0] |= HAS_INSTRUMENT;
         command[command_ptr] = (instrument << 4) & 0x30;
@@ -481,14 +481,14 @@ void convert_channel2(uint8_t pattern_number, uint8_t step_number,
 
         // If a note is set with no volume, set volume to the max
         // TODO: This should take the volume from the sample volume
-        if (volume == -1)
-            volume = 64;
+        //if (volume == -1)
+        //    volume = 64;
     }
 
     // Check if there is a sample defined
     if (samplenum > 0)
     {
-        uint32_t instrument = (samplenum - 1) & 3;
+        uint32_t instrument = samplenum & 3;
 
         command[0] |= HAS_INSTRUMENT;
         command[command_ptr] = (instrument << 4) & 0x30;
@@ -559,8 +559,8 @@ void convert_channel3(uint8_t pattern_number, uint8_t step_number,
 
         // If a note is set with no volume, set volume to the max
         // TODO: This should take the volume from the sample volume
-        if (volume == -1)
-            volume = 64;
+        //if (volume == -1)
+        //    volume = 64;
     }
 
     // Check if there is a sample defined
@@ -631,7 +631,7 @@ void convert_channel4(uint8_t pattern_number, uint8_t step_number,
     // Check if there is a sample defined
     if (samplenum > 0)
     {
-        uint32_t kit = (samplenum - 1) & 0xF;
+        uint32_t kit = samplenum & 0xF;
 
         command[0] |= HAS_KIT;
         command[command_ptr] = kit & 0x0F;
@@ -639,8 +639,8 @@ void convert_channel4(uint8_t pattern_number, uint8_t step_number,
 
         // If a note is set with no volume, set volume to the max
         // TODO: This should take the volume from the sample volume
-        if (volume == -1)
-            volume = 64;
+        //if (volume == -1)
+        //    volume = 64;
     }
 
     if ((effectnum != 0) || (effectparams != 0))
