@@ -1496,9 +1496,41 @@ void gbt_update(void)
 
         gbt_refresh_pattern_ptr();
     }
+}
 
+void gbt_get_position(int *order, int *row, int *tick)
+{
+    if (gbt.playing == 0)
+    {
+        *order = -1;
+        *row = -1;
+        if (tick)
+            *tick = -1;
 
+        return;
+    }
 
+    *order = gbt.current_order;
+    *row = gbt.current_row;
+    if (tick)
+        *tick = gbt.ticks_elapsed;
+}
 
+void gbt_set_position(int order, int row)
+{
+    if (gbt.playing == 0)
+        return;
 
+    channel1_silence();
+    channel2_silence();
+    channel3_silence();
+    channel4_silence();
+
+    // Force refresh as soon as possible
+    gbt.ticks_elapsed = gbt.speed - 1;
+
+    gbt.current_row = row;
+    gbt.current_order = order;
+
+    gbt_refresh_pattern_ptr();
 }
