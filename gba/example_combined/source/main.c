@@ -14,22 +14,26 @@
 
 extern const uint8_t *template_combined_psg[];
 
+void gbt_sync_to_maxmod(void)
+{
+    while (1)
+    {
+        gbt_update();
+
+        int order, row, tick;
+        gbt_get_position(&order, &row, &tick);
+
+        if (tick == mmGetPositionTick())
+            break;
+    }
+}
+
 int main(int argc, char *argv[])
 {
     irqInit();
 
     irqSet(IRQ_VBLANK, mmVBlank);
-    irqSet(IRQ_TIMER2, gbt_update);
-
-    irqEnable(IRQ_VBLANK | IRQ_TIMER2);
-
-    uint32_t gba_cpu_freq = 16 * 1024 * 1024;
-
-    REG_TM1CNT_L = -1024;
-    REG_TM1CNT_H = TIMER_IRQ | TIMER_START; // Prescaler = 1
-
-    REG_TM2CNT_L = -(gba_cpu_freq / 1024) / 64;
-    REG_TM2CNT_H = TIMER_COUNT | TIMER_IRQ | TIMER_START;
+    irqEnable(IRQ_VBLANK);
 
     // Initialize maxmod with soundbank and 4 channels
     mmInitDefault((mm_addr)soundbank_bin, 4);
@@ -45,5 +49,6 @@ int main(int argc, char *argv[])
     {
         VBlankIntrWait();
         mmFrame();
+        gbt_sync_to_maxmod();
     }
 }
