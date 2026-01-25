@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 //
-// Copyright (c) 2022 Antonio Niño Díaz <antonio_nd@outlook.com>
+// Copyright (c) 2022 Antonio Niño Díaz
 
 // This example uses a S3M file that has preset panning values for each channel,
 // and modifies them during the playback of the song.

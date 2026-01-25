@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 //
-// Copyright (c) 2022 Antonio Niño Díaz <antonio_nd@outlook.com>
+// Copyright (c) 2022 Antonio Niño Díaz
 
 // This example shows how to set and get the position of the current song.
 

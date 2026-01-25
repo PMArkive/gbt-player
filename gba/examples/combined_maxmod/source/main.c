@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 //
-// Copyright (c) 2022 Antonio Niño Díaz <antonio_nd@outlook.com>
+// Copyright (c) 2022 Antonio Niño Díaz
 
 // Example that shows how to play a song with Maxmod and GBT Player at the same
 // time and keep them in sync.

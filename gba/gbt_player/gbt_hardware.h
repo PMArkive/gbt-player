@@ -2,7 +2,7 @@
 //
 // SPDX-License-Identifier: MIT
 //
-// Copyright (c) 2020-2022 Antonio Niño Díaz <antonio_nd@outlook.com>
+// Copyright (c) 2020-2022 Antonio Niño Díaz
 
 #ifndef GBT_HARDWARE_H__
 #define GBT_HARDWARE_H__

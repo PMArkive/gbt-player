@@ -4,7 +4,7 @@
 #
 # SPDX-License-Identifier: MIT
 #
-# Copyright (c) 2022 Antonio Niño Díaz <antonio_nd@outlook.com>
+# Copyright (c) 2022 Antonio Niño Díaz
 
 def read_bytes(path):
     with open(path, "rb") as file:
@@ -186,7 +186,7 @@ if __name__ == "__main__":
     import sys
 
     print("s3msplit v4.4.1 (part of GBT Player)")
-    print("Copyright (c) 2022 Antonio Niño Díaz <antonio_nd@outlook.com>")
+    print("Copyright (c) 2022 Antonio Niño Díaz")
     print("All rights reserved")
     print("")
 

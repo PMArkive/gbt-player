@@ -3,7 +3,7 @@
  *
  * SPDX-License-Identifier: MIT
  *
- * Copyright (c) 2009-2018, Antonio Niño Díaz <antonio_nd@outlook.com>
+ * Copyright (c) 2009-2018, Antonio Niño Díaz
  */
 
 #include <stdio.h>
@@ -874,8 +874,7 @@ int main(int argc, char *argv[])
     int i;
 
     printf("mod2gbt v2.2 (part of GBT Player)\n");
-    printf("Copyright (c) 2009-2018 Antonio Niño Díaz "
-           "<antonio_nd@outlook.com>\n");
+    printf("Copyright (c) 2009-2018 Antonio Niño Díaz\n");
     printf("All rights reserved\n");
     printf("\n");
 

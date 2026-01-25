@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 //
-// Copyright (c) 2022 Antonio Niño Díaz <antonio_nd@outlook.com>
+// Copyright (c) 2022 Antonio Niño Díaz
 
 // This example uses a S3M file with modified channel 3 instruments that will
 // get exported with the rest of the song. GBT Player will load the modified

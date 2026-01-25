@@ -4,7 +4,7 @@
 #
 # SPDX-License-Identifier: MIT
 #
-# Copyright (c) 2009-2022 Antonio Niño Díaz <antonio_nd@outlook.com>
+# Copyright (c) 2009-2022 Antonio Niño Díaz
 
 class RowConversionError(Exception):
     def __init__(self, message, pattern = -1, row = -1, channel = -1):
@@ -474,7 +474,7 @@ if __name__ == "__main__":
     import sys
 
     print("mod2gbt v4.4.1 (part of GBT Player)")
-    print("Copyright (c) 2009-2022 Antonio Niño Díaz <antonio_nd@outlook.com>")
+    print("Copyright (c) 2009-2022 Antonio Niño Díaz")
     print("All rights reserved")
     print("")
     print("GBT Player has deprecated the usage of MOD files. This converter is")

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 //
-// Copyright (c) 2022 Antonio Niño Díaz <antonio_nd@outlook.com>
+// Copyright (c) 2022 Antonio Niño Díaz
 
 // This example uses a S3M file with an instrument that doesn't have a default
 // volume of 64. The default volume of an instrument is used when you write a

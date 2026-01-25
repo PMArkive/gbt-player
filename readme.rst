@@ -52,8 +52,8 @@ Copyright (C) 2009-2022 Antonio Niño Díaz
 
 All rights reserved.
 
-Email: antonio [underscore] nd [at] outlook [dot] com
+Email: antonio_nd@outlook.com or antonio_nd@proton.me
 
-Web: www.skylyrac.net
+Web: https://www.skylyrac.net
 
-Latest version: https://github.com/AntonioND/gbt-player
+Codeberg: https://codeberg.org/SkyLyrac/gbt-player
